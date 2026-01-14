@@ -1,0 +1,25 @@
+# ---- Visual Studio ----
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ---- CMake ----
+out/
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# ---- Build artifacts ----
+*.exe
+*.dll
+*.pdb
+*.obj
+*.lib
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
