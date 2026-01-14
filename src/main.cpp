@@ -53,7 +53,7 @@ int main() {
     const float dt = 1.0f / 240.0f;
     float acc = 0.0f;
 
-    PlayerControls L{ KEY_E, KEY_D, KEY_F }; // Left: E/D angle, F hit
+    PlayerControls L{ KEY_W, KEY_S, KEY_F }; // Left: W/S angle, F hit
     PlayerControls R{ KEY_I, KEY_K, KEY_J }; // Right: I/K angle, J hit
     PlayerState pL{}, pR{};
 
@@ -165,7 +165,7 @@ int main() {
         drawAngle(W - 120.0f, groundY - 20.0f, pR.angleDeg, false);
 
         DrawText(TextFormat("L: %d   R: %d", scoreL, scoreR), 20, 20, 20, Trace);
-        DrawText("Left:  E/D angle, F hit    Right: I/K angle, J hit", 20, 45, 18, Trace);
+        DrawText("Left:  W/S angle, F hit    Right: I/K angle, J hit", 20, 45, 18, Trace);
         DrawText(serveFromLeft ? "Serve: LEFT (press F)" : "Serve: RIGHT (press J)", 20, 70, 18, Trace);
 
         EndDrawing();
